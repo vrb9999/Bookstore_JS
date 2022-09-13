@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body{
+    margin: 0px;
+}
+
+.outer{
+    height: 100vh;
+    width: 100vw;
+    background-color: #9d9d9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    /* border: 1px solid rgb(215, 212, 212); */
+    border-radius: 10px;
+    height: 425px;
+    width: 47%;
+    display: flex;
+}
+
+.back{
+    /* border: 1px solid black; */
+    border: none;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    width: 45%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin: 20px 0px;
+}
+
+.back p{
+    font-family: "Noto Sans Myanmar UI", arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 25px
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    margin-top: 20px;
+}
+
+.front{
+    /* border: 1px solid rgb(215, 212, 212); */
+    border: none;
+    box-shadow: 0px 5px 15px #00000029;
+    border-radius: 6px;
+    width: 55%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    /* position: relative; */
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btns a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+/* .active{
+    background-color: #A03037;
+    height: 4px;
+    border: none;
+    border-radius: 5px;
+    margin-top: -25px;
+} */
+
+.header hr{
+    background-color: #A03037;
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+
+#signup{
+    display: none;
+}
+
+#signup form{
+    margin: 0px;
+    width: 100%;
+}
+
+#pwd{
+    position: relative;
+}
+
+#eye img{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    position: absolute;
+    right: 10px;
+}
+
+#eye{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+form{
+    margin-top: 20px;
+}
+
+form input{
+    height: 30px;
+    width: 70%;
+    font-size: 20px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+form p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 20px 60px 0px ;
+    text-align: left;
+}
+
+#signup-btn{
+    width: 72%;
+    height: 40px;
+    margin-top: 25px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #A03037;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#login a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 58px;
+    opacity: 0.7;
+}
+
+.hr-text{
+    position: relative;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    max-width: 250px;
+    margin: 30px auto;
+    text-align: center;
+}
+  
+.hr-text:before{
+    content:" ";
+    height: 1px;
+    width: 100px;
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+  
+.hr-text:after{
+    content:" ";
+    height: 1px;
+    width: 100px;
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.login-through{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+#fb{
+    height: 37px;
+    width: 35%;
+    background-color: #4266B2;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+#google{
+    height: 37px;
+    width: 35%;
+    background-color: #E4E4E4;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+

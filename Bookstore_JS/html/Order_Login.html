@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Order_Login.css">
+    <script src="../script/Order_Login.js"></script>
+    <title>Bookstore_login</title>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="back">
+                <img src="../assets/Order_Login/2766594.png">
+                <p>ONLINE BOOK SHOPPING</p>
+            </div>
+
+            <div class="front">
+                <div class="header">
+                    <div class="btns" id="btns">
+                        <a href="#" id="a1"  onclick="signup_hide()">LOGIN</a>
+                        <a href="#" id="a2"  onclick="login_hide()">SIGNUP</a>
+                    </div>
+                    <div>
+                        <hr id="hr">
+                    </div>
+                </div>
+
+                <div id="login">
+                    <form>
+                        <p>Email</p>
+                        <input type="text" id="email">
+                        <p>Password</p>
+                        <input type="password" id="pwd">
+                        <span id="eye" onclick="showInLogin()">
+                            <i id="show-password"><img src="../assets/Order_Login/visibility_off_FILL0_wght200_GRAD0_opsz24.svg"></i>
+                        </span>
+                        <a href="#">Forgot Password?</a>
+                        <button type="submit" id="signup-btn">LOGIN</button>
+                        <h5 class="hr-text">OR</h5>
+                        <div class="login-through">
+                            <button id="fb">Facebook</button>
+                            <button id="google">Google</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="signup">
+                    <form>
+                        <p>Full Name</p>
+                        <input type="text" id="name">
+                        <p>Email</p>
+                        <input type="text" id="email">
+                        <p>Password</p>
+                        <input type="password" id="s-pwd">
+                        <span id="eye" onclick="showInSignup()">
+                            <i id="show-password"><img src="../assets/Order_Login/visibility_off_FILL0_wght200_GRAD0_opsz24.svg"></i>
+                        </span>
+                        
+                        <p>Mobile</p>
+                        <input type="text" id="mobile">
+                        <button type="submit" id="signup-btn">SIGNUP</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
