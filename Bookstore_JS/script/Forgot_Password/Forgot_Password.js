@@ -36,3 +36,28 @@ function onError(input, message) {
 function validateEmail(email) {
     return /^([A-Za-z0-9]{3,20})([.][A-Za-z0-9]{1,10})*([@][A-Za-z]{2,5})+[.][A-Za-z]{2,3}([.][A-Za-z]{2,3})?$/.test(email);
 }
+
+function forgot_password(){
+    var email = document.getElementById("email");
+    let data = {
+        email:email.value
+    }
+    console.log(data);
+
+    $.ajax({
+        url:`https://localhost:44327/api/User/ForgotPasswordUser/${email}`,
+        type:'POST',
+        data:JSON.stringify(data),
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        success: function(result){
+            console.log(result);
+            //localStorage.setItem('token', result.data);
+            //window.location.href='../note/dashboard.html';
+        },
+        error: function(error){
+            console.log(error);
+        }
+    })
+}

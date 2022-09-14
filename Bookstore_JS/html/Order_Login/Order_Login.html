@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../../css/Order_Login/Order_Login.css">
     <script src="../../script/Order_Login/Order_Login.js"></script>
     <script src="../../script/Order_Login/Order_Signup.js"></script>
+    <script src="../../script/Order_Login/Api_Integration.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Bookstore_login</title>
 </head>
 
@@ -48,7 +50,7 @@
 
                         <a href="#">Forgot Password?</a>
 
-                        <button type="submit" id="signup-btn" onclick="validate_login()">LOGIN</button>
+                        <button type="submit" id="signup-btn" onclick="validate_login(), login()">LOGIN</button>
 
                         <h5 class="hr-text">OR</h5>
 
@@ -89,7 +91,7 @@
                             <small>Error message</small>
                         </div>
 
-                        <button type="submit" id="signup-btn" onclick="validate_signup()">SIGNUP</button>
+                        <button type="submit" id="signup-btn" onclick="validate_signup(), register()">SIGNUP</button>
                     </form>
                 </div>
             </div>
