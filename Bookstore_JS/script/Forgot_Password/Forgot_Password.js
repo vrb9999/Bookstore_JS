@@ -38,19 +38,12 @@ function validateEmail(email) {
 }
 
 function forgot_password(){
-    var email = document.getElementById("email");
-    let data = {
-        email:email.value
-    }
-    console.log(data);
+    var email = document.getElementById("email"); 
+    console.log(email.value)       
 
     $.ajax({
-        url:`https://localhost:44327/api/User/ForgotPasswordUser/${email}`,
+        url:`https://localhost:44327/api/User/ForgotPasswordUser/${email.value}`,
         type:'POST',
-        data:JSON.stringify(data),
-        headers:{
-            'Content-Type': 'application/json'
-        },
         success: function(result){
             console.log(result);
             //localStorage.setItem('token', result.data);
