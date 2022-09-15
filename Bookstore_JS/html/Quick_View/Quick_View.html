@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/Quick_View/Quick_View.css">
+    <script src="../../script/Quick_View/Quick_View.js"></script>    
+    <title>Quick_View</title>
+</head>
+<body>
+    <header>
+        <nav id="toolbar" class="toolbar">
+            <div class="h-content">
+                <div class="logo">
+                    <img src="../../assets/Forgot_Password/education.svg">
+                    <span class="logo-text">Bookstore</span>
+                </div>
+    
+                <div class="search">
+                    <i class="search-icon"><img src="../../assets/Dashboard/search.svg"></i>
+                    <input class="search-text" type="text" placeholder="Search..." />
+                </div>
+    
+                <div class="user">
+                    <div class="person">
+                        <button><img src="../../assets/Dashboard/person.svg"></button>
+                        <span>Person</span>
+                    </div>
+                    
+                    <div class="cart">
+                        <button><img src="../../assets/Dashboard/cart.svg"></button>
+                        <span>Cart</span>
+                    </div>
+                </div>
+            </div>            
+        </nav>
+    </header>
+
+    <main>
+        <div class="m-content">
+            <div class="top">
+                <div class="books">
+                    <p>Book Path</p>
+                    <span>(number)</span>
+                </div>               
+            </div>
+            
+            <div id="display">
+                <div class="left">
+                    <div class="book-img">
+                        <div id="small-img">
+                            <img id="img1" src="../../assets/Quick_View/Image 1.png">
+                            <img id="img2" src="../../assets/Quick_View/Image 46.png">
+                        </div>
+                        <div id="big-img">
+                            <img src="../../assets/Quick_View/Image 11@2x.png">
+                        </div>
+                    </div>
+                    <div class="book-btn-grp">
+                        <div class="book-btns">
+                            <button id="bag">ADD TO BAG</button>
+                            <button id="wishlist"><img src="../../assets/Quick_View/favorite.svg">WISHLIST</button>
+                        </div>                        
+                    </div>                    
+                </div>
+
+                <div class="right">
+                    <div class="book-heading">
+                        <div class="book-title">
+                            <p id="b-title">Book Title</p>
+                        </div>
+                        
+                        <div class="book-author">
+                            <p id="b-author">by Author Name</p>
+                        </div>
+                        
+                        <div class="book-rating">
+                            <div class="dr">
+                                <p id="b-rating">4.5</p>
+                                <i><img src="../../assets/Dashboard/star.svg"></i>
+                            </div>                            
+                            <p id="b-rcount">(count)</p>
+                        </div>
+
+                        <div class="book-price">
+                            <p id="b-original">Rs. 1000</p>
+                            <a href="#" id="b-discount">Rs. 1500</a>
+                        </div>
+                    </div>
+
+                    <div class="book-detail">
+                        <label>Book Detail -</label>
+                        <p>Book description.</p>
+                    </div>
+
+                    <div class="book-feedback">
+                        <label>Customer Feedback</label>
+                        <div class="review">
+                            <div class="O-rating">
+                                <p>Overall Rating</p>
+                            </div>
+
+                            <div class="star">
+                                <i><img src="../../assets/Quick_View/star_outline.svg"></i>
+                                <i><img src="../../assets/Quick_View/star_outline.svg"></i>
+                                <i><img src="../../assets/Quick_View/star_outline.svg"></i>
+                                <i><img src="../../assets/Quick_View/star_outline.svg"></i>
+                                <i><img src="../../assets/Quick_View/star_outline.svg"></i>
+                            </div>
+
+                            <div class="review-text">
+                                <Textarea placeholder="Write your review..."></Textarea>
+                            </div>
+
+                            <div class="submit">
+                                <button>Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
