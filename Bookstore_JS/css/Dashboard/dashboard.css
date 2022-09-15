@@ -24,12 +24,20 @@ header{
     align-items: center;
     height: 4rem;
     width: 100%;
-    padding: 20px;
+    background-color: #A03037;
+}
+
+.h-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    width: 86%;
     color: white;
     font-size: 28px;
     font-family: 'Roboto', sans-serif;
     background-color: #A03037;
-    z-index: 2;
+    /* border: 1px solid black; */
 }
 
 .logo{
@@ -72,7 +80,7 @@ header{
 }
 
 .user button img{
-    width: 35px;
+    width: 37px;
 }
 
 .user button{
@@ -100,8 +108,156 @@ header{
 
 /* ======================================================= main ======================================================= */
 main{
-    margin-top: 5rem;
-    min-height: calc(100vh - 5rem - 50px);
+    margin-top: 4rem;
+    min-height: calc(100vh - 4rem - 50px);
+    display: flex;
+    justify-content: center;
+}
+
+.m-content{
+    width: 76%;
+    padding: 15px 40px 0px 40px;
+    /* border: 1px solid black; */
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black;  */
+}
+
+.books{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items:center;
+}
+.books span{
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 5px;
+    padding-top: 5px;
+    opacity: 0.7;
+}
+
+#sort{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #E2E2E2;
+    border-radius: 3px;
+    height: 30px;
+    width: 170px;
+    padding-left: 5px;
+    margin-right: 50px;
+    outline: none;
+}
+
+
+/* ======================== display book ======================== */
+#display{    
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    /* border: 1px solid black ; */
+}
+
+.displayBook{
+    display: block;
+    border: 1px solid rgb(215, 212, 212);
+    border-radius: 8px;    
+    width: 250px;
+    height: 285px;
+    margin: 15px;
+}
+
+.displayBook:hover{
+    box-shadow: 0px 0px 3px gray;
+}
+
+.display-content{
+}
+
+.book-img{
+    background-color: #F5F5F5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-title{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 10px 0px 3px 20px;
+}
+
+.book-author{
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    color: #878787;
+    margin: 0px 0px 3px 20px;
+}
+
+.book-rating{
+    display: flex;
+    margin: 0px 0px 3px 20px;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.dr{
+    background-color: #388E3C;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    width: 40px;
+    height: 20px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dr i{
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:4px;
+}
+.dr img{
+    width: 12px;
+    margin: 0px;
+}
+#b-rcount{
+    color: #878787;
+    margin-left: 5px;
+}
+
+.book-price{
+    display: flex;
+    margin: 0px 0px 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#b-original{
+    font-size: 15px;
+    font-weight: bold;
+}
+#b-discount{
+    font-size: 11px;
+    color: #878787;
+    text-decoration:line-through;
+    margin-left: 5px;
 }
 
 /* ======================================================= footer ======================================================= */

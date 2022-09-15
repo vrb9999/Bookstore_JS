@@ -1,5 +1,5 @@
 function validate() {
-    document.getElementById("form").addEventListener("submit", function (e) {
+    document.getElementById("f-form").addEventListener("submit", function (e) {
         e.preventDefault();
 
         let email = document.getElementById("email");
@@ -38,16 +38,15 @@ function validateEmail(email) {
 }
 
 function forgot_password(){
-    var email = document.getElementById("email"); 
-    console.log(email.value)       
+    //var email = document.getElementById("email");
+
+    console.log(email.value)
 
     $.ajax({
         url:`https://localhost:44327/api/User/ForgotPasswordUser/${email.value}`,
         type:'POST',
         success: function(result){
             console.log(result);
-            //localStorage.setItem('token', result.data);
-            //window.location.href='../note/dashboard.html';
         },
         error: function(error){
             console.log(error);

@@ -17,6 +17,7 @@ function login(){
         success: function(result){
             console.log(result);
             localStorage.setItem('token', result.data);
+            window.location.href='../Dashboard/dashboard.html';
         },
         error: function(error){
             console.log(error);

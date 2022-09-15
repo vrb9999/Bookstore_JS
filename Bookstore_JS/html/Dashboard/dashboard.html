@@ -5,45 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/Dashboard/dashboard.css">
-    <script src="../../script/Dashboard/dashboard.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
     <header>
         <nav id="toolbar" class="toolbar">
-            <div class="logo">
-                <img src="../../assets/Forgot_Password/education.svg">
-                <span class="logo-text">Bookstore</span>
-            </div>
-
-            <div class="search">
-                <i class="search-icon"><img src="../../assets/Dashboard/search.svg"></i>
-                <input class="search-text" type="text" placeholder="Search..." />
-            </div>
-
-            <div class="user">
-                <div class="person">
-                    <button><img src="../../assets/Dashboard/person.svg"></button>
-                    <span>Person</span>
+            <div class="h-content">
+                <div class="logo">
+                    <img src="../../assets/Forgot_Password/education.svg">
+                    <span class="logo-text">Bookstore</span>
                 </div>
-                
-                <div class="cart">
-                    <button><img src="../../assets/Dashboard/cart.svg"></button>
-                    <span>Cart</span>
+    
+                <div class="search">
+                    <i class="search-icon"><img src="../../assets/Dashboard/search.svg"></i>
+                    <input class="search-text" type="text" placeholder="Search..." />
                 </div>
-            </div>
+    
+                <div class="user">
+                    <div class="person">
+                        <button><img src="../../assets/Dashboard/person.svg"></button>
+                        <span>Person</span>
+                    </div>
+                    
+                    <div class="cart">
+                        <button><img src="../../assets/Dashboard/cart.svg"></button>
+                        <span>Cart</span>
+                    </div>
+                </div>
+            </div>            
         </nav>
     </header>
 
     <main>
-        
+        <div class="m-content">
+            <div class="top">
+                <div class="books">
+                    <p>Books</p>
+                    <span>(count)</span>
+                </div>
+                <div class="sort">
+                    <select name="sort" id="sort">
+                        <option value="">Sort by relevance</option>
+                        <option value="">Price - high to low</option>
+                        <option value="">Price - low to high</option>
+                        <option value="">Rating</option>
+                      </select>
+                </div>                
+            </div>
+            <div id="display">
+                <div class="displayBook">
+                    <div class="display-content">
+                        <div class="book-img">
+                            <img id="b-img" src="../../assets/Dashboard/Image 11.png">
+                        </div>
+
+                        <div class="book-title">
+                            <p id="b-title">Book Title</p>
+                        </div>
+                        
+                        <div class="book-author">
+                            <p id="b-author">by Author Name</p>
+                        </div>
+                        
+                        <div class="book-rating">
+                            <div class="dr">
+                                <p id="b-rating">4.5</p>
+                                <i><img src="../../assets/Dashboard/star.svg"></i>
+                            </div>                            
+                            <p id="b-rcount">(count)</p>
+                        </div>
+
+                        <div class="book-price">
+                            <p id="b-original">Rs. 1000</p>
+                            <a href="#" id="b-discount">Rs. 1500</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    
 
     <footer>
         <div class="f-content">
             <p>Copyright © 2022, Bookstore Private Limited. All Rights Reserved</p>
         </div>
     </footer>
+
+<script src="../../script/Dashboard/dashboard.js"></script>
+<script src="../../script/Dashboard/Get_All_Books.js"></script>
 </body>
 </html>
