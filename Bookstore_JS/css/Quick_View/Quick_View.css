@@ -97,13 +97,18 @@ header{
     justify-content: center;
     align-items: center;
     font-size: 12px;
+    border-left: 2px solid #8F2B2F;    
+    border-right: 2px solid #8F2B2F;
+    padding: 0px 20px;
 }
 .cart{
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 12px;   
+    border-right: 2px solid #8F2B2F;
+    padding: 0px 20px;
 }
 
 /* ======================================================= main ======================================================= */
@@ -117,14 +122,14 @@ main{
 .m-content{
     width: 76%;
     height: fit-content;
-    padding: 15px 40px 30px 40px;
+    padding: 10px 40px 30px 40px;
     /* border: 1px solid black; */
 }
 
 .top{
     display: flex;
     justify-content: space-between;
-    margin: 15px 0px;
+    margin: 10px 0px;
     /* border: 1px solid black; */
 }
 
@@ -304,6 +309,33 @@ main{
     cursor: pointer;
 }
 
+/* ============== Display feedback ============== */
+.display-feedback{
+    /* border: 1px solid black; */
+    margin-top: 25px;
+}
+
+.feedback-content{
+    /* border: 1px solid black; */
+    margin-bottom: 30px;
+}
+
+#u-name{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.user-star img{
+    width: 20px;
+    margin: 5px 5px 5px 0px;
+}
+
+.user-review p{
+    color: #707070;
+    font-size: 12px;
+    text-align: justify;
+}
+
 /* ============== Book image ============== */
 .book-img{
     display: flex;
@@ -318,6 +350,10 @@ main{
     width: 75%;
     height: 450px;
 }
+#big-img img{
+    width: 310px;
+    height: 405px;
+}
 #small-img{
     display: flex;
     flex-direction: column;
@@ -330,6 +366,8 @@ main{
     border-right: none;
     padding: 3px;
     cursor: pointer;
+    width: 45px;
+    height: 55px;
 }
 
 .book-btn-grp{

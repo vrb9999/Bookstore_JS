@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/Dashboard/dashboard.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../css/Wishlist/Login_Wishlist.css">
+    <script src="../../script/Wishlist/Wishlist.js"></script>
+    <title>Wishlist-Login</title>
 </head>
-
 <body>
     <header>
         <nav id="toolbar" class="toolbar">
@@ -40,34 +38,18 @@
     </header>
 
     <main>
-        <div class="m-content">
-            <div class="top">
-                <div class="books">
-                    <p>Books</p>
-                    <span id="books-count">(Books count)</span>
-                </div>
-                <div class="sort">
-                    <select name="sort" id="sort">
-                        <option value="">Sort by relevance</option>
-                        <option value="">Price - high to low</option>
-                        <option value="">Price - low to high</option>
-                        <option value="">Rating</option>
-                    </select>
-                </div>
-            </div>
-            <div id="display"></div>
+        <div class="p">
+            <p id="p1">PLEASE LOGIN</p>
+            <p id="p2">Login to view items in your wishlist.</p>
+        </div>
+
+        <div>
+            <img src="../../assets/Wishlist/wishlist.svg">
+        </div>
+
+        <div>
+            <a href="#">LOGIN/SIGNUP</a>
         </div>
     </main>
-
-    <footer>
-        <div class="f-content">
-            <p>Copyright © 2022, Bookstore Private Limited. All Rights Reserved</p>
-        </div>
-    </footer>
-
-    <script src="../../script/Dashboard/Get_All_Books.js"></script>
-    <script src="../../script/Dashboard/dashboard.js"></script>
-    <script src="../../script/Quick_View/Quick_View.js"></script>
-
 </body>
 </html>

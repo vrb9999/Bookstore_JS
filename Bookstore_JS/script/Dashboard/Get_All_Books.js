@@ -14,6 +14,7 @@ function getAllBooks() {
             console.log(result);
             bookArray = result.data;
             bookArray.reverse();
+            displayAllBooks(bookArray);
         },
         error: function (error) {
             console.log(error);

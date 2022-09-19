@@ -111,6 +111,7 @@ header{
     padding: 0px 20px;
 }
 
+
 /* ======================================================= main ======================================================= */
 main{
     margin-top: 4rem;
@@ -121,23 +122,40 @@ main{
 
 .m-content{
     width: 76%;
-    padding: 10px 40px 0px 40px;
+    height: fit-content;
+    padding: 10px 40px 30px 40px;
     /* border: 1px solid black; */
 }
 
 .top{
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid black;  */
+    margin: 10px 0px;
+    /* border: 1px solid black; */
 }
 
 .books{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     display: flex;
-    align-items:center;
+    /* border: 1px solid black; */
 }
-.books span{
+
+.wishlist{
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+}
+
+.list-head{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 35px;
+    display: flex;
+    width: 100%;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #E4E4E4;
+}
+.list-head span{
     font-size: 15px;
     font-weight: 100;
     margin-left: 5px;
@@ -145,152 +163,55 @@ main{
     opacity: 0.7;
 }
 
-#sort{
-    font-size: 15px;
-    border: 1px solid #E2E2E2;
-    border-radius: 3px;
-    height: 30px;
-    width: 170px;
-    padding-left: 5px;
-    margin-right: 50px;
-    outline: none;
-    cursor: pointer;
-}
-
-
-/* ======================== display book ======================== */
-#display{    
+.list-books{
     display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    flex-wrap: wrap;
-    gap: 1%;
-    /* border: 1px solid black ; */
+    justify-content: space-between;
+    padding: 40px 35px;
+    border-bottom: 1px solid #E4E4E4;
 }
 
-.view-book{
+.w-img img{
+    width: 85px;
+    height: 105px;
+}
+.w-detail{
+    /* border: 1px solid black; */
+    width: 83%;
+    padding-bottom: 15px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.displayBook{
-    display: block;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(215, 212, 212);
-    border-radius: 8px;    
-    width: 250px;
-    height: 297px;
-    margin: 10px;
-    cursor: pointer;
+    justify-content: space-around;
+}
+.w-delete{
+    /* border: 1px solid black; */
+    cursor:pointer;
 }
 
-.displayBook:hover{
-    box-shadow: 0px 0px 3px gray;
-}
-
-.quick-view{
-    position:absolute;
-    padding-top: 50px;
-    transition: visibility 0.5s, opacity 0.8s; 
-    visibility:hidden;
-    opacity:0
-}
-.quick-view a{
-    text-decoration: none;
-    font-size: 15px;
-    background-color: #000000;
-    border-radius: 5px;
-    color: white;
-    padding: 7px;
-    opacity: 0.3;
-}
-.view-book:hover .quick-view{
-    visibility: visible;
-    opacity:1
-}
-
-.book-img{
-    background-color: #F5F5F5;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 175px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.book-img img{
-    width: 105px;
-    height: 135px;
-}
-
-.book-title{
-    font-size: 15px;
+.w-title{
+    font-size: 18px;
     font-weight: bold;
-    margin: 10px 0px 3px 20px;
 }
 
-.book-author{
-    font-size: 11px;
+.w-author{
+    font-size: 13px;
     color: #878787;
-    margin: 0px 0px 3px 20px;
     display: flex;
 }
-#b-byauthor{
+#w-byauthor{
     margin-right: 3px;
 }
 
-.book-rating{
+.w-price{
     display: flex;
-    margin: 0px 0px 3px 20px;
-    font-size: 11px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.dr{
-    background-color: #388E3C;
-    border-radius: 3px;
-    color: white;
-    font-weight: bold;
-    width: 40px;
-    height: 20px;
-    padding: 0px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.dr i{
-    width: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left:4px;
-}
-.dr img{
-    width: 12px;
-    margin: 0px;
-}
-#b-rcount{
-    color: #878787;
-    margin-left: 5px;
-}
-
-.book-price{
-    display: flex;
-    margin: 0px 0px 10px 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-#b-original{
+#w-original{
     font-size: 15px;
     font-weight: bold;
 }
-#b-discount{
+#w-discount{
     font-size: 11px;
     color: #878787;
     text-decoration:line-through;
