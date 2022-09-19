@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+  
+html, body {
+    max-width: 100%;
+    position: relative;
+}
+
+/* ======================================================= header ======================================================= */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    background-color: #A03037;
+}
+
+.h-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    width: 86%;
+    color: white;
+    font-size: 28px;
+    background-color: #A03037;
+    /* border: 1px solid black; */
+}
+
+.logo{
+    cursor: pointer;
+}
+
+/* ======================== search ======================== */
+.search {
+    background: #FCFCFC;
+    width: 35%;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+.search-text{
+    border: none;
+    background-color: #FCFCFC;
+    outline: none;
+    font-size: large;
+    width: 87%;
+    height: 100%;
+}
+.search-icon img{
+    width: 25px;
+    opacity: 0.6;
+}
+.search-icon{
+    padding: 10px;
+    padding-top: 15px;
+}
+
+/* ======================== user ======================== */
+.user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 20px;
+    width: 8%;
+}
+
+.user button img{
+    width: 37px;
+}
+
+.user button{
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.person{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-left: 2px solid #8F2B2F;    
+    border-right: 2px solid #8F2B2F;
+    padding: 0px 20px;
+}
+.cart{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;   
+    border-right: 2px solid #8F2B2F;
+    padding: 0px 20px;
+}
+
+
+/* ======================================================= main ======================================================= */
+main{
+    margin-top: 4rem;
+    min-height: calc(100vh - 4rem - 50px);
+    display: flex;
+    margin-left: 12%;
+}
+
+.m-content{
+    width: 75%;
+    height: fit-content;
+    padding: 10px 40px 30px 40px;
+    /* border: 1px solid black; */
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 20px;
+    /* border: 1px solid black; */
+}
+
+.mycart{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.cart-detail{
+    padding: 17px 35px;
+    border: 1px solid #707070;
+    border-radius: 3px;
+}
+
+.c-top{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartId{
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartId span{
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 5px;
+    opacity: 0.7;
+}
+
+.location{
+    /* border: 1px solid black; */
+    width: 30%;
+}
+#location{
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #DCDCDC;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 15px;
+    gap: 10px;
+    cursor: pointer;
+}
+#down{
+    margin-left: 20%;
+}
+
+.c-books{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px;
+    /* border: 1px solid black; */
+}
+
+.c-img img{
+    width: 105px;
+    height: 135px;
+}
+.c-detail{
+    /* border: 1px solid black; */
+    width: 85%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.c-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.c-author{
+    font-size: 13px;
+    color: #878787;
+    display: flex;
+    margin: 10px 0px 20px 0px  ;
+}
+#c-byauthor{
+    margin-right: 3px;
+}
+
+.c-price{
+    display: flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#c-discount{
+    font-size: 20px;
+    font-weight: bold;
+}
+#c-original{
+    font-size: 11px;
+    color: #878787;
+    text-decoration:line-through;
+    margin-left: 5px;
+    cursor: auto;
+}
+
+.c-quantity{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 18px;
+}
+#minus img{
+    width: 25px;
+}
+#num{
+    font-size: 15px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    padding: 3px 10px;
+    margin: 0px 5px;
+}
+#plus img{
+    width: 25px;
+}
+
+.checkout{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-end;
+}
+#checkout{
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    background-color: #3371B5;
+    color: white;
+    font-size: 15px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.customer{
+    padding: 17px 35px;
+    border: 1px solid #707070;
+    border-radius: 3px;
+    margin: 15px 0px;
+}
+
+.customer form{
+    /* border: 1px solid black; */
+    padding: 20px 0px 0px 10px;
+    width: 72%;
+}
+
+.customer p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.customer form label{
+    font-size: 15px;
+}
+
+.c-form1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-form2{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+.c-form2 textarea{
+    min-width: 209%;
+    max-width: 209%;
+    min-height: 60px;
+    padding: 0px 3px;
+    margin-top: 5px;
+    border: 1px solid #DCDCDC;
+    border-radius: 3px;
+}
+
+.c-form2 input{
+    height: 45px;
+    font-size: 15px;
+    padding: 0px 3px;
+    margin-top: 5px;
+    border: 1px solid #DCDCDC;
+    border-radius: 3px;
+    outline-color: #A03037;
+}
+
+.add-type{
+    /* border: 1px solid black; */
+    width: 48%;
+}
+.add-type p{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.radio{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.radio label{
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+/* ======================================================= footer ======================================================= */
+footer{
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #2E1D1E;
+}
+
+.f-content{
+    color: white;
+    font-size: 15px;
+    padding-left: 6%;
+    padding-top: 15px;
+}
