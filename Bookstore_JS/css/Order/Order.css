@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+  
+html, body {
+    max-width: 100%;
+    position: relative;
+}
+
+/* ======================================================= header ======================================================= */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    background-color: #A03037;
+}
+
+.h-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    width: 86%;
+    color: white;
+    font-size: 28px;
+    background-color: #A03037;
+    /* border: 1px solid black; */
+}
+
+.logo{
+    cursor: pointer;
+}
+
+/* ======================== search ======================== */
+.search {
+    background: #FCFCFC;
+    width: 35%;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+.search-text{
+    border: none;
+    background-color: #FCFCFC;
+    outline: none;
+    font-size: large;
+    width: 87%;
+    height: 100%;
+}
+.search-icon img{
+    width: 25px;
+    opacity: 0.6;
+}
+.search-icon{
+    padding: 10px;
+    padding-top: 15px;
+}
+
+/* ======================== user ======================== */
+.user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 20px;
+    width: 8%;
+}
+
+.user button img{
+    width: 37px;
+}
+
+.user button{
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.person{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-left: 2px solid #8F2B2F;    
+    border-right: 2px solid #8F2B2F;
+    padding: 0px 20px;
+}
+.cart{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;   
+    border-right: 2px solid #8F2B2F;
+    padding: 0px 20px;
+}
+
+
+/* ======================================================= main ======================================================= */
+main{
+    margin-top: 4rem;
+    min-height: calc(100vh - 4rem - 50px);
+    display: flex;
+    justify-content: center;
+}
+
+.m-content{
+    width: 76%;
+    height: fit-content;
+    padding: 10px 40px 30px 40px;
+    /* border: 1px solid black; */
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    /* border: 1px solid black; */
+}
+
+.orders{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.order-detail{
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 35px;
+    margin-bottom: 20px;
+    border: 1px solid #707070;
+    border-radius: 3px;
+}
+
+.o-books{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 25px 0px;
+    /* border: 1px solid black; */
+}
+
+.order-date{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.order-date img{
+    width: 10px;
+}
+
+.o-img img{
+    width: 105px;
+    height: 135px;
+}
+.o-detail{
+    /* border: 1px solid black; */
+    width: 85%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.o-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.o-author{
+    font-size: 13px;
+    color: #878787;
+    display: flex;
+    margin: 10px 0px 20px 0px  ;
+}
+#o-byauthor{
+    margin-right: 3px;
+}
+
+.o-price{
+    display: flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#o-discount{
+    font-size: 20px;
+    font-weight: bold;
+}
+#o-original{
+    font-size: 11px;
+    color: #878787;
+    text-decoration:line-through;
+    margin-left: 5px;
+    cursor: auto;
+}
+
+
+/* ======================================================= footer ======================================================= */
+footer{
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #2E1D1E;
+}
+
+.f-content{
+    color: white;
+    font-size: 15px;
+    padding-left: 6%;
+    padding-top: 15px;
+}
